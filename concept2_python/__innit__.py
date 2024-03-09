@@ -1,9 +1,9 @@
-def VO2max(weight, time, isFemale=True):  # for male athletes who are trained
+def VO2max(weight, time, isFemale):  # for male athletes who are trained
     _pace = (time)/60  # pace in minutes
     if isFemale:
         if weight <= 61.36:
             _Y = 14.6 - (1.5 * _pace)
-            return (_Y * 1000) / weight 
+            return (_Y * 1000) / weight
         else:
             _Y = 14.9 - (1.5 * _pace)
             return (_Y * 1000) / (weight)
